@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Cadastro - Alunos</title>
+</head>
+<body>
+    <h1>Formulário de Cadastro</h1>
+    <div class="content">
+        <form id="add-student-form">
+            <input type="text" name="nome" id="nome" placeholder="Digite o nome do aluno aqui:">
+            <input type="number" name="idade" id="idade" placeholder="Digite a idade do aluno aqui:">
+            <button>CADASTRAR</button>
+        </form>
+        <ul id="student-list"></ul>
+    </div>
+    <!-- Importação do SDK do Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-firestore.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
